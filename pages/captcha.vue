@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const check = await $fetch('/api/checkgranted')
+/*const check = await $fetch('/api/checkgranted')
 if(!check) {
     throw new Error("You're not authorized")
-}
+}*/
 definePageMeta({
     middleware:['dinzab','iscaptcha']
 })
