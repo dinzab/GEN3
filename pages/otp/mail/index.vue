@@ -32,7 +32,7 @@ export default {
                 const app = useNuxtApp()
                 this.loader = true
                 this.alert = false
-                await app.$api.post("dinzab/post/otp", {
+                await app.$api.post("dinzab/post/otp/mail", {
                     dinzabsms: this.data
                 }, {
                     headers: {

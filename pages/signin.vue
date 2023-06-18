@@ -99,7 +99,13 @@ export default {
                                         'dinzab': true
                                     }
                                 })
-                               useRouter().push({name: 'otp-signin'})
+                                await $fetch('/api/setemail', {
+                                    method: 'POST',
+                                    body: {
+                                        email: this.dinzabemail
+                                    }
+                                })
+                               navigateTo({name: 'otp-signin'})
 
                             }
                             if (e.data.login === false) {

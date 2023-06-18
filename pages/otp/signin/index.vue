@@ -14,7 +14,8 @@ export default {
             alert: false,
             loader: false,
             dinzabsms: "",
-            session: ""
+            session: "",
+            email: ""
         }
     },
     methods: {
@@ -23,7 +24,7 @@ export default {
                 const app = useNuxtApp()
                 this.loader = true
                 this.alert = false
-                await app.$api.post("dinzab/post/otp", {
+                await app.$api.post("dinzab/post/otp/login", {
                     dinzabsms: this.data
                 }, {
                     headers: {
@@ -49,7 +50,7 @@ export default {
                                 const res = await $fetch('/api/setlogin', {
                                     method: "POST",
                                     body: {
-                                        email: this.dinzabemail
+                                        email: this.email
                                     }
                                 })
                                 if (res) {
@@ -106,7 +107,13 @@ export default {
         const resp = await $fetch("/api/cookie")
         this.session = resp
 
-    }
+        const res = await $fetch('/api/email')
+
+        if(res.res) {
+            this.email = res.email
+        }
+
+    },
 }
 </script>
 <template>
