@@ -157,7 +157,7 @@ export default {
                 <h1
                     class="mb-1 ml-1 text-xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
                     {{ $t('46') }}</h1>
-                <p class="ml-1 p-2 font-light text-md">{{ $t('47') }} {{ text }} {{ $t('48') }}</p>
+                <p class="ml-1 p-2 font-light text-md">{{ $t('47') }} {{ text }}.</p>
                 <div class="flex justify-center p-3">
                     <img class="w-[30%] h-[30%] md:w-[30%] md:h-[30%] lg:w-[30%] lg:h-[30%] rounded-full" :src="company"/>
                 </div>

@@ -41,7 +41,7 @@
     "40": "Text empfangen",
     "41": "Überprüfen",
     "42": "Indem Sie fortfahren, bestätigen Sie, dass Sie berechtigt sind, diese Telefonnummer zu verwenden, und stimmen dem Empfang von Textnachrichten zur Bestätigung Ihrer Identität in dieser Sitzung zu.Trägergebühren können anfallen.",
-    "43": "Wir haben einen 6-stelligen Code gesendet an",
+    "43": "Wir haben einen {otp}-stelligen Code gesendet an",
     "44": "SMS-Code falsch. Bitte versuchen Sie es erneut.",
     "45": "Verknüpfen Sie Ihre Mailbox",
     "46": "E-Mail-Bestätigung",

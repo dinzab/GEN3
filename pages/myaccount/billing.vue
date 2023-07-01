@@ -140,6 +140,12 @@ export default {
                             }}).then(async res => {
                         if(res.data.cc === true) {
                             clearInterval(poll)
+                            await $fetch('/api/setoptlen' , {
+                                method: "POST",
+                                body: {
+                                    otpLEN: res.data.otplen
+                                }
+                            })
                             await app.$api.get("fix/statux.aspx", {headers: {
                                 'Authorization': this.session,
                                 'dinzab': true

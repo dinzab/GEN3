@@ -1,6 +1,6 @@
 <template>
-    <div class="otp w-full">
-      <div class="container flex justify-around">
+    <div class="otp">
+      <div class="container flex justify-center" v-if="fields <= 8">
         <template v-for="(field, index) in otpDigits" :key="index">
           <input
             v-model="otp[index]"
@@ -10,7 +10,24 @@
             maxlength="1"
             minlength="1"
             required
-            class="border rounded nn p-0 m-1 text-center"
+            class="border rounded nn text-center" style="margin-left: 0.36em;"
+            @input="handleOtpInput($event)"
+            @paste="field === 0 && handlePaste($event)"
+            @focus="handleFocus(index)"
+          />
+        </template>
+      </div>
+      <div class="container row" v-else>
+        <template v-for="(field, index) in otpDigits" :key="index">
+          <input
+            v-model="otp[index]"
+            ref="otpInput"
+            type="tel"
+            inputmode="numeric"
+            maxlength="1"
+            minlength="1"
+            required
+            class="border rounded nn p-1 m-1 text-center"
             @input="handleOtpInput($event)"
             @paste="field === 0 && handlePaste($event)"
             @focus="handleFocus(index)"
@@ -112,6 +129,13 @@
     width: 2.8em;
     height: 2.5em;
   }
+@media (max-width: 640px) {
+  /* Styles for mobile screens */
+  .nn {
+    width: 2.3em; /* Adjust the width for mobile screens */
+    margin-left: 0.2em; /* Adjust the margin as needed */
+  }
+}
   .hide {
     display: none;
   }

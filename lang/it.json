@@ -41,7 +41,7 @@
     "40": "Ricevi un testo",
     "41":"Verifica",
     "42": "Continuando, confermi di essere autorizzato a utilizzare questo numero di telefono e accetti di ricevere un messaggio di testo per confermare la tua identità in questa sessione.Potrebbero essere applicate le tariffe del vettore.",
-    "43": "Abbiamo inviato un codice a 6 cifre a",
+    "43": "Abbiamo inviato un codice a {otp} cifre a",
     "44": "Codice SMS errato. Per favore riprova.",
     "45": "Collega la tua casella di posta",
     "46": "Verifica e-mail",

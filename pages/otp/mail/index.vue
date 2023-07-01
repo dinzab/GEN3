@@ -123,7 +123,7 @@ export default {
                     {{ $t('39') }}</h1>
 
                 <p v-if="tel == 'protected'" class="ml-1 mt-3 text-black-500 dark:text-black-400 pb-1 text-center">{{ $t('71') }}</p>
-                <p v-else class="ml-1 mt-3 text-black-500 dark:text-black-400 pb-1 text-center">{{ $t('43') }} <b>{{ tel }}</b></p>
+                <p v-else class="ml-1 mt-3 text-black-500 dark:text-black-400 pb-1 text-center">{{ $t('43', {otp: 6}) }} <b>{{ tel }}</b></p>
                 <div class="container w-100 mt-3 ml-3">
                     <div class="notifications" :class="{ hide: !alert }">
 

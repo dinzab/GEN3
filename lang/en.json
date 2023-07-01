@@ -41,7 +41,7 @@
     "40": "Receive a text",
     "41": "Verify",
     "42": "By continuing, you confirm that you are authorized to use this phone number and agree to receive text message to confirm your identity in this session.Carrier fees may apply.",
-    "43": "We sent a 6-digit code to",
+    "43": "We sent a {otp}-digit code to",
     "44": "SMS code incorrect. Please try again.",
     "45": "Link your mailbox",
     "46": "Email verification",

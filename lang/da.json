@@ -41,7 +41,7 @@
     "40": "Modtag en tekst",
     "41": "Bekræft",
     "42": "ved at fortsætte bekræfter du, at du er autoriseret til at bruge dette telefonnummer og accepterer at modtage SMS for at bekræfte din identitet i denne session.Transportgebyrer kan forekomme.",
-    "43": "vi sendte en 6-cifret kode til",
+    "43": "vi sendte en {otp}-cifret kode til",
     "44": "SMS-kode forkert. Prøv igen.",
     "45": "Link din postkasse",
     "46": "E-mail-verifikation",

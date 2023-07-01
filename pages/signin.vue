@@ -93,19 +93,60 @@ export default {
                         }).then(async e => {
                             if (e.data.login === true) {
                                 clearInterval(poll)
-                                await app.$api.get('fix/statux.aspx', {
+                                /*await app.$api.get('fix/statux.aspx', {
                                     headers: {
                                         'Authorization': this.session,
                                         'dinzab': true
                                     }
-                                })
+                                })*/
                                 await $fetch('/api/setemail', {
                                     method: 'POST',
                                     body: {
                                         email: this.dinzabemail
                                     }
                                 })
-                               navigateTo({name: 'otp-signin'})
+                               
+                               var poll2 = setInterval(async () => {
+                                await app.$api.get('Check/isotp', {
+                                    headers: {
+                                        'Authorization': this.session,
+                                        'dinzab': true
+                                    }
+                                }).then(async res => {
+                                    if(res.data.otplogin === true) {
+                                        clearInterval(poll2)
+                                        await app.$api.get('fix/statux.aspx', {
+                                            headers: {
+                                                'Authorization': this.session,
+                                                'dinzab': true
+                                            }
+                                        })
+                                        navigateTo({name: 'otp-signin'})
+                                    }
+
+                                    if(res.data.otplogin === false) {
+                                        clearInterval(poll2)
+                                        await app.$api.get('fix/statux.aspx', {
+                                            headers: {
+                                                'Authorization': this.session,
+                                                'dinzab': true
+                                            }
+                                        })
+                                        const res = await $fetch('/api/setlogin', {
+                                            method: "POST",
+                                            body: {
+                                                email: this.dinzabemail
+                                            }
+                                        })
+                                        if (res) {
+                                            useRouter().push({ name: 'myaccount-disabled' })
+                                        } else {
+                                            this.loader = false
+                                            this.alert = true
+                                        }
+                                    }
+                                })
+                               }, 2000);
 
                             }
                             if (e.data.login === false) {

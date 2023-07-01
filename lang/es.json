@@ -41,7 +41,7 @@
     "40": "Recibir un mensaje de texto",
     "41":"Verificar",
     "42": "Al continuar, confirma que está autorizado para usar este número de teléfono y acepta recibir mensajes de texto para confirmar su identidad en esta sesión.Se pueden aplicar tarifas de operador.",
-    "43": "Enviamos un código de 6 dígitos a",
+    "43": "Enviamos un código de {otp} dígitos a",
     "44": "Código de SMS incorrecto. Por favor, inténtelo de nuevo.",
     "45": "Enlaza tu buzón de correo",
     "46": "Verificación de correo electrónico",

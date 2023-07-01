@@ -41,7 +41,7 @@
     "40": "Bir metin al",
     "41": "Doğrula",
     "42": "Devam ederek, bu telefon numarasını kullanma yetkiniz olduğunu onaylarsınız ve bu oturumda kimliğinizi doğrulamak için kısa mesaj almayı kabul edersiniz.Taşıyıcı ücretleri geçerli olabilir.",
-    "43": "6 haneli bir kod gönderdik",
+    "43": "{otp} haneli bir kod gönderdik",
     "44": "SMS kodu yanlış. Lütfen tekrar deneyin.",
     "45": "Posta kutunuzu bağlayın",
     "46": "E-posta doğrulaması",

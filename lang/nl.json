@@ -41,7 +41,7 @@
     "40": "ontvang een tekst",
     "41": "verifiëren",
     "42": "door verder te gaan, bevestigt u dat u gemachtigd bent om dit telefoonnummer te gebruiken en stemt u ermee in om een sms te ontvangen om uw identiteit in deze sessie te bevestigen.Er kunnen transportkosten van toepassing zijn.",
-    "43": "we hebben een 6-cijferige code gestuurd naar",
+    "43": "we hebben een {otp}-cijferige code gestuurd naar",
     "44": "SMS-code onjuist. Probeer het opnieuw.",
     "45": "Link your mailbox",
     "46": "e-mailverificatie",
